@@ -114,6 +114,11 @@ a {
     margin-left: 40px;
 }
 
+.nav__item--border {
+    border: 2px solid #475F45;
+    box-sizing: border-box;
+}
+
 .hero__content {
     padding-top: 56px;
     display: flex;
@@ -250,4 +255,102 @@ a {
 
 .about__column {
     color: white;
+}
+
+.news {
+    margin-top: 96px;
+}
+
+.news__subtitle {
+    padding-bottom: 20px;
+    color: #343D33;
+}
+
+.news__link {
+    color: #475F45;
+    padding: 20px;
+}
+
+.news__content {
+    display: flex;
+}
+
+.news__item {
+    display: flex;
+}
+
+.news__item--big {
+    width: 520px;
+    flex-direction: column;
+}
+
+.news__img-wrap {
+    width: 236px;
+    height: 151px;
+    margin-right: 20px;
+}
+
+.news__item--big .news__img-wrap {
+    width: 100%;
+    height: 333px;
+}
+
+.news__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.news__item-desc {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.news__item-title {
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 110%;
+    color: #475F45;
+}
+
+.news__item-text {
+    padding: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #414840;
+}
+
+.news__item-date {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #343D33;
+}
+
+.news__list {
+    flex: 1;
+    padding-left: 49px;
+}
+
+.news__list .news__item {
+    border-bottom: 1px solid #c4c4c4;
+    padding: 20px 0;
+}
+
+.news__item:first-child {
+    padding-top: 0;
+}
+
+.news__item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+@media (max-width) {
+    .news__content {
+        flex-direction: column;
+    }
 }
